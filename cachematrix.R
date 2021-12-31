@@ -2,10 +2,10 @@
 ## The function can be used to cache the inverse of a matrix, including two functions as: makeCacheMatrix() and cachSolve().
 
 ## makeCacheMatrix: This function creates a special "matrix" object that can cache its inverse.
-## It includes the set,get, setmean and getmean functions.
+## It includes the set,get, setinverse and getinverse functions.
 ## (1) Get() returns the vector x stored in the main function.
 ## (2) Set() changes the vector stored in the main function.
-## (3) Setmean() and getmean() are similar to set and get and don't calculate the mean, it store the output value in m.
+## (3) setinverse() and getinverse() are similar to set and get and don't calculate the inverse, it store the output value in m.
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   set <- function(y) {
